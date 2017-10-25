@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>MoViE BlOcKbUsTeR</h1>
+    <p class="lead">Come to MoViE BlOcKbUsTeR to rent your favorite movie or tv series!!</p>
+    <p><img src="~/images.jpg" id="imgs" /></p>
+    
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>>@Html.ActionLink("Customers", "Index","Customers")<</h2>
+        <p>
+            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>>@Html.ActionLink("Movies", "Index", "Movies")<</h2>
+        <p>You won't find another place that has a better selection than us! Just come and check us out!</p>
+        <p><a class="btn btn-primary" href="@Url.Action("https://www.moviefone.com/dvd/")">Our Selection &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>>@Html.ActionLink("Rentals", "Index", "Rentals")<</h2>
+        <p>Our rental policy is easy and fast! Just come in or check out online and pick out your favorite and then return it by the due date. It's that easy!</p>
+        <img src="~/Images/download.png" id="imgs" />
+    </div>
+</div>
